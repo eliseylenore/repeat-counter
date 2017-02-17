@@ -18,7 +18,9 @@ using System.Collections.Generic;
 
          public string GetWord()
          {
-             return _givenWord;
+            //get rid of white space
+             string[] givenWord = _givenWord.Split(delimiterChars);
+             return String.Join("", givenWord);
          }
 
          public string GetString()
@@ -42,7 +44,7 @@ using System.Collections.Generic;
              int counter = 0;
              foreach(string word in _sentenceSplitArray)
              {
-                 if(word.ToLower() == _givenWord.ToLower())
+                 if(word.ToLower() == this.GetWord().ToLower())
                  {
                      counter += 1;
                  }
