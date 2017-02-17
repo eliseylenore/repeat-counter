@@ -7,7 +7,7 @@ using System.Collections.Generic;
          private string _givenWord;
          private string _givenString;
          private string[] _sentenceSplitArray;
-         char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
+         char[] delimiterChars = { ' ', ',', '.', ':', '?', '\t' };
 
          public RepeatCounter(string givenWord, string givenString)
          {

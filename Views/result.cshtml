@@ -2,5 +2,10 @@
   Layout="Shared/_Layout.cshtml";
 }
 <div class="container">
-    <h3>We found the word <strong>"@Model.GetWord()"</strong> @Model.CountRepeats() times in your sentence.</h3>
+  @* nav *@
+  <h2 class="nav"><a href="/">Word Counter</a></h2>
+  @* end nav *@
+  <h4><a href="/"> Try another sentence</a></h4>
+  <div class="row spacing"></div>
+  <h3>We found the word <strong>"@Model.GetWord()"</strong> @Model.CountRepeats() times in your sentence.</h3>
 </div>
