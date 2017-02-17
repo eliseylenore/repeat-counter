@@ -6,7 +6,7 @@
 
 ## Specs
 
-**The program returns the given word and string.**
+**The program returns the given word and string.**  
 * Input: "the" "When the baby grows up to be an old man, they bury his body in the ground."
 * **Why it's the simplest way to test behavior:** These strings are formatted in the exact way that our program will spit them back out._
 * Output: "the" "When the baby grows up to be an old man, they bury his body in the ground."
