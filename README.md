@@ -43,7 +43,7 @@ _**Why it's the simplest way to test behavior:** There is only one "the" to be f
 
 ## Known Bugs
 
-_If the back button is pressed, multiple contacts are created from one entry._
+_If the user adds a space to their word, it will not pull the proper matches._
 
 ## Support and contact details
 
@@ -51,7 +51,7 @@ _Please contact me with any problems at eliseylenore@gmail.com_
 
 ## Technologies Used
 
-_I used C# with the Nancy framework. I also relied on Bootstrap._
+_I used C# with the Nancy framework and Razor. I also relied on Bootstrap._
 
 ### License
 
