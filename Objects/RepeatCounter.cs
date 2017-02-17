@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
- namespace Namespace.Objects
+ namespace RepeatCounterApp.Objects
  {
-     public class Class
+     public class RepeatCounter
      {
      }
  }
