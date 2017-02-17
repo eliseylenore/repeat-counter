@@ -22,7 +22,7 @@ using System.Collections.Generic;
 
          public string[] MakeArray()
          {
-             return new string[] {"blah"};
+             return _sentenceSplitArray;
          }
      }
  }
