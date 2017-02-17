@@ -6,11 +6,12 @@
 body {
   font-family: 'Questrial', sans-serif;
   font-size: 30px;
-  color: #517281
+  color: #517281;
 }
 
-a {
+ a, a:visited {
   color: #517281;
+  transition: .2s color;
 }
 
 h2 {
@@ -19,7 +20,7 @@ h2 {
   font-size: 60px;
 }
 
-a:hover, a:active {
+ a:hover, a:active {
   text-decoration: none;
   color: #7895A2;
   cursor: pointer;
