@@ -27,7 +27,15 @@ using System.Collections.Generic;
 
          public int CountRepeats()
          {
-             return 1890213;
+             int counter = 0;
+             foreach(string word in _sentenceSplitArray)
+             {
+                 if(word == _givenWord)
+                 {
+                     counter += 1;
+                 }
+             }
+             return counter;
          }
      }
  }
