@@ -45,5 +45,18 @@ namespace RepeatCounterApp
             //assert
             Assert.Equal(expectedOutput, testCounter.CountRepeats());
         }
+
+        [Fact]
+        public void CountRepeats_FindMatchesRegardlessOfCapitalization_Int()
+        {
+            //arrange
+            int expectedOutput = 1;
+            string givenWord = "this";
+            string givenString = "This house is haunted";
+            //act
+            RepeatCounter testCounter = new RepeatCounter(givenWord, givenString);
+            //assert
+            Assert.Equal(expectedOutput, testCounter.CountRepeats());
+        }
     }
 }
