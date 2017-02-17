@@ -1,3 +1,18 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
+<div class="row jumbotron">
+    <div class="container">
+        <h1>Word Counter</h1>
+        <h3>I'll tell you how often a word appears in a given sentence, phrase, or paragraph!</h3>
+    </div>
+
+      <div class="row">
+        <form class="" action="/result" method="post">
+          <label for="sentence">Enter a sentence</label>
+          <input type="text" name="given-string">
+          <label for="word">Enter a word to count</label>
+          <input type="text" name="given-word">
+          <button class="btn" type="submit" name="button">Count</button>
+        </form>
+      </div>
