@@ -8,11 +8,16 @@ namespace RepeatCounterApp
     public class RepeatCounterTest
     {
         [Fact]
-        public void methodWeAreTesting_whatBehaviorWeAreTesting_expectedResultOfTest()
+        public void ReturnInput_ReturnTwoInputtedStrings_Strings()
         {
             //arrange
+            string expectedOutput = "Your chosen word: \"the\". Your sentence: \"When the baby grows up to be an old man, they bury his body in the ground.\"";
+            string givenWord = "the";
+            string givenString = "When the baby grows up to be an old man, they bury his body in the ground.";
             //act
+            RepeatCounter testCounter = new RepeatCounter(givenWord, givenString);
             //assert
+            Assert.Equal(expectedOutput, testCounter.ReturnInput());
         }
     }
 }

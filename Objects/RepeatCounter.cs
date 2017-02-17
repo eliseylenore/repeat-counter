@@ -3,7 +3,20 @@ using System.Collections.Generic;
 
  namespace RepeatCounterApp.Objects
  {
-     public class RepeatCounter
-     {
+     public class RepeatCounter {
+         private string _givenWord;
+         private string _givenString;
+
+         public RepeatCounter(string givenWord, string givenString)
+         {
+           _givenWord = givenWord;
+           _givenString = givenString;
+         }
+
+         public string ReturnInput()
+         {
+             string blah = "blah";
+             return blah;
+         }
      }
  }
