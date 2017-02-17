@@ -17,7 +17,7 @@ namespace RepeatCounterApp
                string givenString = Request.Form["given-string"];
                string givenWord = Request.Form["given-word"];
                RepeatCounter model = new RepeatCounter(givenWord, givenString);
-               return View["index.cshtml", model];
+               return View["result.cshtml", model];
            };
         }
     }
