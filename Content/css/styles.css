@@ -6,21 +6,22 @@
 body {
   font-family: 'Questrial', sans-serif;
   font-size: 30px;
+  color: #517281
 }
 
-h2 a {
-  color: black;
+a {
+  color: #517281;
 }
 
 h2 {
-  border-bottom: 1px lightblue solid;
+  border-bottom: 1px #7895A2 solid;
   font-family: 'Finger Paint', cursive;
   font-size: 60px;
 }
 
 a:hover, a:active {
   text-decoration: none;
-  color: green;
+  color: #7895A2;
   cursor: pointer;
 }
 
@@ -32,4 +33,31 @@ form {
 
 .icon {
   height: 40px;
+}
+
+/************* FooterStyles *************/
+div#footer {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    background: #F68D5C;
+    padding:8px;
+
+}
+
+#footer li {
+  color: slategrey;
+  list-style: none;
+  display: inline-block;
+  padding-right: 12px;
+  font-size: 15px;
+}
+
+#footer li a {
+  color: white;
+}
+
+#footer li a:hover {
+  color: #F4D27A;
 }
