@@ -15,8 +15,7 @@ using System.Collections.Generic;
 
          public string ReturnInput()
          {
-             string blah = "blah";
-             return blah;
+            return "Your chosen word: \"" + _givenWord + "\". Your sentence: \"" + _givenString + "\"";
          }
      }
  }
