@@ -7,12 +7,13 @@ using System.Collections.Generic;
          private string _givenWord;
          private string _givenString;
          private string[] _sentenceSplitArray;
+         char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
 
          public RepeatCounter(string givenWord, string givenString)
          {
            _givenWord = givenWord;
            _givenString = givenString;
-           _sentenceSplitArray = givenString.Split(' ');
+           _sentenceSplitArray = givenString.Split(delimiterChars);
          }
 
          public string ReturnInput()
