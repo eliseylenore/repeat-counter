@@ -30,7 +30,7 @@ using System.Collections.Generic;
              int counter = 0;
              foreach(string word in _sentenceSplitArray)
              {
-                 if(word == _givenWord)
+                 if(word.ToLower() == _givenWord.ToLower())
                  {
                      counter += 1;
                  }
