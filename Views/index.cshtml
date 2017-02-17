@@ -3,20 +3,21 @@
 }
 <div class="container">
   @* nav *@
-  <ul class="nav nav-pills">
-    <li role="presentation"><a href="/">Address Book</a></li>
-    <li role="presentation" id="new-contact"><a href="/contact/form">Add New Contact</a></li>
-  </ul>
-  <h1>Word Counter</h1>
-  <h3>I'll tell you how often a word appears in a given sentence, phrase, or paragraph!</h3>
-</div>
-
-<div class="row">
-  <form class="" action="/result" method="post">
-    <label for="sentence">Enter a sentence</label>
-    <input type="text" name="given-string">
-    <label for="word">Enter a word to count</label>
-    <input type="text" name="given-word">
-    <button class="btn" type="submit" name="button">Count</button>
-  </form>
+  <h2 class="nav"><a href="/">Word Counter</a></h2>
+  @* end nav *@
+  <h4>I'll tell you how often a word appears in a sentence!  I'm good at that.  <img class="icon" src="/Content/img/smiley.png" alt=""></h4>
+  <div class="row spacing"></div>
+  <div class="row">
+    <form class="" action="/result" method="post">
+      <div class="form-group">
+        <label for="sentence">Enter a sentence</label>
+        <input type="text" class= "form-control" name="given-string">
+      </div>
+      <div class="form-group">
+        <label for="word">Enter your word</label>
+        <input type="text" class= "form-control" name="given-word">
+      </div>
+      <button class="btn" type="submit" name="button">Count it!</button>
+    </form>
+  </div>
 </div>
