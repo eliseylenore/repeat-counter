@@ -19,5 +19,18 @@ namespace RepeatCounterApp
             //assert
             Assert.Equal(expectedOutput, testCounter.ReturnInput());
         }
+
+        [Fact]
+        public void MakeArray_ReturnGivenStringAsArray_Array()
+        {
+            //arrange
+            string[] expectedOutputArray = new string[] {"Here", "rests", "the", "old", "oak", "tree"};
+            string givenWord = "the";
+            string givenString = "Here rests the old oak tree";
+            //act
+            RepeatCounter testCounter = new RepeatCounter(givenWord, givenString);
+            //assert
+            Assert.Equal(expectedOutputArray, testCounter.MakeArray());
+        }
     }
 }
