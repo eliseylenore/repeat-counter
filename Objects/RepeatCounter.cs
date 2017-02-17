@@ -24,5 +24,10 @@ using System.Collections.Generic;
          {
              return _sentenceSplitArray;
          }
+
+         public int CountRepeats()
+         {
+             return 1890213;
+         }
      }
  }

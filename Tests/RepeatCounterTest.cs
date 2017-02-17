@@ -32,5 +32,18 @@ namespace RepeatCounterApp
             //assert
             Assert.Equal(expectedOutputArray, testCounter.MakeArray());
         }
+
+        [Fact]
+        public void CountRepeats_ReturnNumberOfTimesWordAppears_Int()
+        {
+            //arrange
+            int expectedOutput = 1;
+            string givenWord = "the";
+            string givenString = "Here rests the old oak tree";
+            //act
+            RepeatCounter testCounter = new RepeatCounter(givenWord, givenString);
+            //assert
+            Assert.Equal(expectedOutput, testCounter.CountRepeats());
+        }
     }
 }
