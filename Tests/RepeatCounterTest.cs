@@ -58,5 +58,18 @@ namespace RepeatCounterApp
             //assert
             Assert.Equal(expectedOutput, testCounter.CountRepeats());
         }
+
+        [Fact]
+        public void CountRepeats_FindMatchesRegardlessOfPunctuation_Int()
+        {
+            //arrange
+            int expectedOutput = 1;
+            string givenWord = "man";
+            string givenString = "When the baby grows up to be an old man, they bury his body in the ground.";
+            //act
+            RepeatCounter testCounter = new RepeatCounter(givenWord, givenString);
+            //assert
+            Assert.Equal(expectedOutput, testCounter.CountRepeats());
+        }
     }
 }
