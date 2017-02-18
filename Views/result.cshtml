@@ -5,7 +5,23 @@
   @* nav *@
   <h2 class="nav"><a href="/">Word Counter</a></h2>
   @* end nav *@
-  <h4><a href="/"> Try another sentence</a></h4>
+  <button class="btn btn-success right"><a href="/"> Try another sentence</a></h4></button>
   <div class="row spacing"></div>
-  <h3>We found the word <strong>"@Model.GetWord()"</strong> @Model.CountRepeats() times in your sentence.</h3>
+  <div class="center">
+    <h3>We found the word <strong>"@Model.GetWord()"</strong> @Model.CountRepeats() time(s) in your sentence.</h3>
+    <h3>
+    @foreach(string word in @Model.GetSentenceSplitArray())
+    {
+      @if(word.ToLower() == @Model.GetWord())
+      {
+        <img class="icon" src="/Content/img/cool.png"><span class="highlight">@word</span>
+      }
+      else
+      {
+      <span>@word</span>
+      }
+    }
+  </h3>
+</div>
+<div class="spacing"></div>
 </div>

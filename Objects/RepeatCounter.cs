@@ -28,6 +28,11 @@ using System.Collections.Generic;
              return _givenString;
          }
 
+         public string[] GetSentenceSplitArray()
+         {
+           return _sentenceSplitArray;
+         }
+
 
          public string ReturnInput()
          {

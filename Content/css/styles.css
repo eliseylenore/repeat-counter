@@ -18,12 +18,20 @@ h2 {
   border-bottom: 1px #7895A2 solid;
   font-family: 'Finger Paint', cursive;
   font-size: 60px;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-decoration: none;
+  }
 }
 
- a:hover, a:active {
+a:hover, a:active {
   text-decoration: none;
   color: #7895A2;
   cursor: pointer;
+}
+
+.icon {
+  height: 40px;
 }
 
 /************* Home Page Styles *************/
@@ -32,8 +40,24 @@ form {
   padding-right: 15px;
 }
 
-.icon {
-  height: 40px;
+
+
+/************* Results Page Styles *************/
+.highlight {
+  color: #F68D5C;
+}
+.btn a{
+  color: white;
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+  margin-top: 30px;
 }
 
 /************* FooterStyles *************/
