@@ -15,7 +15,6 @@ body {
 }
 
 h2 {
-  border-bottom: 1px #7895A2 solid;
   font-family: 'Finger Paint', cursive;
   font-size: 60px;
   display: inline-block;
@@ -58,6 +57,10 @@ form {
 .right {
   float: right;
   margin-top: 30px;
+}
+
+.underline {
+  border-bottom: 1px #7895A2 solid;
 }
 
 /************* FooterStyles *************/
