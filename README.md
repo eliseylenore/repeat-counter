@@ -43,7 +43,7 @@ _**Why it's the simplest way to test behavior:** There is only one "the" to be f
 
 ## Known Bugs
 
-_If the user adds a space to their word, it will not pull the proper matches._
+_No known bugs, as of yet._
 
 ## Support and contact details
 
